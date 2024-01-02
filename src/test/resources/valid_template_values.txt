@@ -1,0 +1,6 @@
+Hello, #{name}! My age is #{age}. I work as a #{occupation}.
+values
+name:John
+age:30
+occupation:Software Engineer
+values_end

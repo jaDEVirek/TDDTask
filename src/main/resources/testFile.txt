@@ -1,0 +1,5 @@
+Some text: #{name}. You will be working as a #{occupation}
+values
+name: Jacek
+occupation: Software Developer
+values_end
