@@ -15,9 +15,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.Mockito;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
@@ -96,21 +93,6 @@ public class TemplateGeneratorTest {
         assertThrows(MissingValueException.class, () -> templateGenerator.generateOutput());
     }
 
-    @Test
-    @Tag("saving_output_to_file")
-    public void saveOutputToFile_ShouldSaveOutputToFile() throws IOException {
-        String template = "Hello, #{name}!";
-        String filePath = "src/test/java/output.txt";
-        Map<String, String> variableValues = new HashMap<>();
-        variableValues.put("name", "John");
-        when(templateGenerator.getTemplate()).thenReturn(template);
-        when(templateGenerator.getVariableValues()).thenReturn(variableValues);
-
-        templateGenerator.saveOutputToFile(filePath);
-
-        assertTrue(Files.exists(Paths.get(filePath)));
-    }
-
     @ParameterizedTest
     @MethodSource("generateOutputTestData")
     public void generateOutput_ShouldReturnExpectedOutput_WhenVariableValueProvided(String sentence,
@@ -120,9 +102,7 @@ public class TemplateGeneratorTest {
 
         String output = templateGenerator.generateOutput();
 
-        assertDoesNotThrow(() -> {
-            assertNotNull(output);
-            assertEquals(expectedOutput, output);
-        });
+        assertNotNull(output);
+        assertEquals(expectedOutput, output);
     }
 }

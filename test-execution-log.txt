@@ -1,3 +1,9 @@
+
+Test passed: Validating file arguments with invalid number of arguments should throw an exception
+Test passed: [1] file1.txt, file2.txt
+Test passed: [2] fileA.txt, fileB.txt
+Test passed: [1] file1.txt, file2.jpg
+Test passed: [2] file1.txt, file2.mp3
 Test passed: Should handle 'values_end' gracefully
 Test passed: Should set template and values from user input
 Test passed: [1] The #{animal} jumped over the #{obstacle}., {animal=fox, obstacle=fence}, The fox jumped over the fence.
@@ -6,22 +12,15 @@ Test passed: [3] #{name}'s favorite #{color} is #{favoriteColor}., {color=color,
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenVariableValueNotProvided()
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenSomeVariableValuesNotProvided()
 Test passed: generateOutput_ShouldGenerateOutputWithReplacedVariables()
-Test passed: saveOutputToFile_ShouldSaveOutputToFile()
 Test passed: Should handle invalid file path gracefully
 Test passed: Should read template and values from file
-Test passed: Should handle 'values_end' gracefully
-Test passed: Should set template and values from user input
-Test passed: Should handle 'values_end' gracefully
-Test passed: Should set template and values from user input
-Test passed: [1] The #{animal} jumped over the #{obstacle}., {animal=fox, obstacle=fence}, The fox jumped over the fence.
-Test passed: [2] In the #{time} #{day}, #{name} #{action}., {name=Alice, action=went to work, time=morning, day=Monday}, In the morning Monday, Alice went to work.
-Test passed: [3] #{name}'s favorite #{color} is #{favoriteColor}., {color=color, name=Bob, favoriteColor=blue}, Bob's favorite color is blue.
-Test passed: generateOutput_ShouldThrowMissingValueException_WhenVariableValueNotProvided()
-Test passed: generateOutput_ShouldThrowMissingValueException_WhenSomeVariableValuesNotProvided()
-Test passed: generateOutput_ShouldGenerateOutputWithReplacedVariables()
-Test passed: saveOutputToFile_ShouldSaveOutputToFile()
-Test passed: Should handle invalid file path gracefully
-Test passed: Should read template and values from file
+Test passed: Should save output to file when file name is not empty
+Test passed: Should throw IOException for empty file name
+Test passed: Validating file arguments with invalid number of arguments should throw an exception
+Test passed: [1] file1.txt, file2.txt
+Test passed: [2] fileA.txt, fileB.txt
+Test passed: [1] file1.txt, file2.jpg
+Test passed: [2] file1.txt, file2.mp3
 Test passed: Should handle 'values_end' gracefully
 Test passed: Should set template and values from user input
 Test passed: [1] The #{animal} jumped over the #{obstacle}., {animal=fox, obstacle=fence}, The fox jumped over the fence.
@@ -30,17 +29,24 @@ Test passed: [3] #{name}'s favorite #{color} is #{favoriteColor}., {color=color,
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenVariableValueNotProvided()
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenSomeVariableValuesNotProvided()
 Test passed: generateOutput_ShouldGenerateOutputWithReplacedVariables()
-Test passed: saveOutputToFile_ShouldSaveOutputToFile()
 Test passed: Should handle invalid file path gracefully
 Test passed: Should read template and values from file
+Test passed: Should save output to file when file name is not empty
+Test passed: Should throw IOException for empty file name
+Test passed: Validating file arguments with invalid number of arguments should throw an exception
+Test passed: [1] file1.txt, file2.txt
+Test passed: [2] fileA.txt, fileB.txt
+Test passed: [1] file1.txt, file2.jpg
+Test passed: [2] file1.txt, file2.mp3
+Test passed: Should handle 'values_end' gracefully
+Test passed: Should set template and values from user input
 Test passed: Should handle invalid file path gracefully
 Test passed: Should read template and values from file
-Test passed: Should handle invalid file path gracefully
-Test passed: Should read template and values from file
+Test passed: Should save output to file when file name is not empty
+Test passed: Should throw IOException for empty file name
 Test passed: [1] The #{animal} jumped over the #{obstacle}., {animal=fox, obstacle=fence}, The fox jumped over the fence.
 Test passed: [2] In the #{time} #{day}, #{name} #{action}., {name=Alice, action=went to work, time=morning, day=Monday}, In the morning Monday, Alice went to work.
 Test passed: [3] #{name}'s favorite #{color} is #{favoriteColor}., {color=color, name=Bob, favoriteColor=blue}, Bob's favorite color is blue.
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenVariableValueNotProvided()
 Test passed: generateOutput_ShouldThrowMissingValueException_WhenSomeVariableValuesNotProvided()
 Test passed: generateOutput_ShouldGenerateOutputWithReplacedVariables()
-Test passed: saveOutputToFile_ShouldSaveOutputToFile()
